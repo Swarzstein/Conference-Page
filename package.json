@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "bootstrap": "^5.2.1"
+  },
+  "name": "conference-page",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swarzstein/Conference-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swarzstein/Conference-Page/issues"
+  },
+  "homepage": "https://github.com/Swarzstein/Conference-Page#readme"
+}

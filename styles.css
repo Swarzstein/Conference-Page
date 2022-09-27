@@ -1,0 +1,42 @@
+span {
+  color: #ec5242;
+  font-style: italic;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger div {
+  background-color: #272a31;
+  height: 10%;
+  border-radius: 5em;
+  width: 80%;
+  margin: 2px auto;
+}
+.divider {
+  border: solid 1px #ec5242;
+  margin: 5px 0;
+  width: 40px;
+}
+
+.divider-2 {
+  border: solid 1px #d3d3d3;
+  margin: 5px 0;
+  width: 20px;
+}
+
+.borderless {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
