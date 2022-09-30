@@ -9,131 +9,167 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="wide-menu" class="wide-menu hidden">
-        <div class="flex-right">
-          <button type="button" class="img-btn">
-            <img src="icons/Icon-Cancel.png" alt="Cancel">
-          </button>
-        </div>
-        <div class="container-2 column">
-          <a onclick="displayMenu()" href="#about-myself"><h2>About</h2></a>
-          <a onclick="displayMenu()" href="#contact"><h2>Contact</h2></a>
-        </div>
-      </div>
+
+  <div id="wide-menu" class="wide-menu hidden">
+    <div class="flex-right">
+      <button type="button" class="img-btn">
+        <img src="icons/Icon-Cancel.png" alt="Cancel">
+      </button>
+    </div>
+    <div class="container-2 column">
+      <a onclick="displayMenu()" href="#about-myself"><h2>About</h2></a>
+      <a onclick="displayMenu()" href="#contact"><h2>Contact</h2></a>
+    </div>
+  </div>
+
+
   <header class="">
+
     <button id="menu-button" class="hamburger hidden" type="button">
         <div></div>
         <div></div>
         <div></div>
     </button>
 
-    <div class="d-flex justify-content-spacebetween">
-      <a href="#">Juan Zorrilla</a>
+    <div class="d-flex justify-content-between">
+      <a href="#"><img src="" alt="Logo"></a>
       <nav>      
-        <ul id="menu-options" class="d-flex flex-row">
-          <li>About</li>
-          <li>Proogram</li>
-          <li>Join</li>
-          <li>Sponsor</li>
-          <li>News</li>
-          <li>CC Campaigns</li>
+        <ul id="menu-options" class="navbar-nav d-flex flex-row gap-2">
+          <li class="nav-item"><a href="./about.html">About</a></li>
+          <li class="nav-item">Proogram</li>
+          <li class="nav-item">Join</li>
+          <li class="nav-item">Sponsor</li>
+          <li class="nav-item">News</li>
+          <li class="nav-item">CC Campaigns</li>
         </ul>
       </nav>
     </div>
   </header>
-  <section>
-    <div class="container">
-      <div>
-        <h2>"Hello! Sharing World"</h2>
-        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+
+  <section id="landing">
+    <div class="container-md px-4 py-5">
+      <div class="col-12 col-md-6">
+        <h2 class="h1 color-reddish">"Discover a new world!"</h2>
+        <h1 class="cocogoose rem-3">SCI-TECH FEST 2022</h1>
       </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit, ad sed fugit dolore similique, reiciendis minus quasi temporibus iste possimus tempore libero assumenda debitis sunt consequuntur ullam vel perferendis!</p>
+      <div class="col-md-8 my-2">
+        <p class="main-p">This Novermber submerse into the amazing world of science and technology, with speakers from many echnological and scientifical fields! Discover the technology and science that are going to be part of our daily lives soon.</p>
       </div>
-      <div>
-        <h2>2015.10.15(THU) ~ 16(FRI)</h2>
+      <div class="text-center-mobile">
+        <h2 class="cocogoose">2015.10.15(THU) ~ 16(FRI)</h2>
         <p>@ National Museum of Korea, Art Center and more</p>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <h2>Main Program</h2>
+
+  <section id="main-program" class="py-5">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="color-white">Main Program</h2>
     <div class="divider"></div>
-    <div class="flex row">
-      <div class="card">
-        <div><img src="" alt="img"></div>
-        <h2>Lecture</h2>
+    <div class="container-fluid d-flex flex-wrap justify-content-center gap-2 mt-5 mb-3">
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_01.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Lecture</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_02.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Excibitions</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_03.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Forum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_04.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Workshop</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_05.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Experiment</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
       </div>
     </div>
-    <a href="">See the whole program</a>
-    <button></button>
+    <a href="" class="desktop-only">See the whole program</a>
+    <button class="mobile-only mt-5">Join the Sci-Tech Fest 2022</button>
     </div>
   </section>
-  <section>
-    <div class="container">
+
+  <section id="featured-speakers" class="py-5">
+    <div class="container-md d-flex flex-column align-items-center">
       <h2>Featured Speakers</h2>
-      <div class="divider"></div>
+      <div class="divider mb-5"></div>
       <div class="row">
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_01.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_02.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_03.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_04.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_05.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
-        <div class="card col-md-6 d-flex flex-row px-4 py-2 borderless">
-          <img class="card-img-top" src="" alt="image">
-          <div class="card-content col-9">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_06.png" alt="image">
+          <div class="card-content">
             <h3>Name Last Name</h3>
             <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <div class="divider-2"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea, eaque sapiente reprehenderit quia, molestiae saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
           </div>
         </div>
       </div>
-      <button>More <img src="" alt=""></button>
+      <div class="mobile-only container-fluid row">
+        <button class="more-btn">MORE <img src="icons/arrow_down.png" alt="icon"></button>
+        <button class="more-btn hidden">LESS <img src="icons/arrow_up.png" alt="icon"></button>
+      </div>
+      
     </div>
   </section>
-  <footer></footer>
+
+  <footer>
+    <div></div>
+    <div></div>
+  </footer>
 </body>
+<script src="/main.js"></script>
 </html>
