@@ -38,7 +38,6 @@ const speakers = {
 };
 
 function loadSpeakers() {
-    console.log('loading speakers');
   let Speakers = '';
   //  eslint-disable-next-line
   for(const spkr in speakers) {
@@ -66,4 +65,3 @@ function displayMenu() {
 document.querySelector('#phone-menu > div > button').addEventListener('click', displayMenu);
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('body').addEventListener('load', loadSpeakers);
-console.log('hola');

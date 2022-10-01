@@ -84,7 +84,7 @@ span {
 }
 
 .main-p {
-  margin: 17px 0.75em 0px;
+  margin: 17px 0.75em 0;
   width: calc(100% - 2.5em);
   padding: 1em 0.5em;
   line-height: 150%;
@@ -108,7 +108,6 @@ span {
 .program-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 2%;
-  
 }
 
 .program-card h2 {
@@ -219,7 +218,7 @@ span {
 
 #partner {
   background: #2e2e2e;
-  color:#aeaeae;
+  color: #aeaeae;
 }
 
 #stf2021 {
@@ -280,9 +279,11 @@ span {
   .program-card h2 {
     font-size: 14px;
   }
+
   .program-card p {
     text-align: left;
   }
+
   .desktop-only {
     display: none;
   }
