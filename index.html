@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="loadSpeakers()">
 
   <div id="phone-menu" class="phone-menu hidden">
     <div class="d-flex justify-content-end">
@@ -26,7 +26,6 @@
       <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>CTF Campaigns</h2></a>
     </div>
   </div>
-
 
   <header class="">
 
@@ -108,7 +107,7 @@
     <div class="container-md d-flex flex-column align-items-center">
       <h2>Featured Speakers</h2>
       <div class="divider mb-5"></div>
-      <div class="row">
+      <div id="speakers" class="row">
         <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
           <img class="fit-content-y" src="images/speaker_01.png" alt="image">
           <div class="card-content">

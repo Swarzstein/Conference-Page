@@ -20,6 +20,10 @@ span {
   font-style: italic;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .cocogoose {
   font-family: 'COCOGOOSE', sans-serif;
 }
