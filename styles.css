@@ -5,6 +5,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 span {
   color: #ec5242;
   font-style: italic;
@@ -21,26 +26,26 @@ span {
 .hamburger {
   background: none;
   border: none;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.hamburger div {
+  background-color: #272a31;
+  height: 9%;
+  border-radius: 5em;
+  width: 80%;
+  margin: 2px auto;
+}
+
 .prev-img {
   color: #fff;
   width: 90%;
   height: 30vh;
-}
-
-.hamburger div {
-  background-color: #272a31;
-  height: 10%;
-  border-radius: 5em;
-  width: 80%;
-  margin: 2px auto;
 }
 
 .divider {
@@ -57,6 +62,11 @@ span {
 
 .borderless {
   border: none;
+}
+
+.partner-logo {
+  height: 50px;
+  width: auto;
 }
 
 .main-p {
@@ -101,6 +111,16 @@ span {
   padding: 2%;
 }
 
+.img-btn {
+  background: none;
+  border-style: none;
+  padding: 1%;
+}
+
+.img-btn img {
+  height: 30px;
+}
+
 .color-white {
   color: #fff;
 }
@@ -109,18 +129,53 @@ span {
   color: #ef513c;
 }
 
+.color-red {
+  color: #c52611;
+}
+
 .fit-content-y {
   height: fit-content;
 }
 
-.hidden {
-  display: none;
+.underline {
+  text-decoration: underline;
+}
+
+.sec-separator {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.phone-menu {
+  width: -webkit-fill-available;
+  height: 100vh;
+  position: fixed;
+  background-color: #ef513c;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  z-index: 4;
+
+  /* Font */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  color: #fff;
+  padding: 0 3%;
+}
+
+.phone-menu div a {
+  border-bottom: solid 1px #d3d3d3;
 }
 
 #landing {
   background-image: url(/images/main_big.png);
   background-repeat: repeat-x;
   background-position: center;
+}
+
+#logo-menu {
+  height: 50px;
 }
 
 #about-main {
@@ -144,6 +199,11 @@ span {
   height: 12vh;
 }
 
+#partner {
+  background: #2e2e2e;
+  color:#aeaeae;
+}
+
 #stf2021 {
   background: #f7f7f8 url(/images/Hugh-Herr.jpg) no-repeat center;
   background-size: cover;
@@ -152,6 +212,10 @@ span {
 #stf2020 {
   background: #f7f7f8 url(/images/planetarium.jpg) no-repeat center;
   background-size: cover;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {

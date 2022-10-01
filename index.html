@@ -10,39 +10,45 @@
 </head>
 <body>
 
-  <div id="wide-menu" class="wide-menu hidden">
-    <div class="flex-right">
+  <div id="phone-menu" class="phone-menu hidden">
+    <div class="d-flex justify-content-end">
       <button type="button" class="img-btn">
         <img src="icons/Icon-Cancel.png" alt="Cancel">
       </button>
     </div>
-    <div class="container-2 column">
-      <a onclick="displayMenu()" href="#about-myself"><h2>About</h2></a>
-      <a onclick="displayMenu()" href="#contact"><h2>Contact</h2></a>
+    <div class="container d-flex flex-column">
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Home</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="/about.html"><h2>About</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>program</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Join</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Sponsor</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>News</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>CTF Campaigns</h2></a>
     </div>
   </div>
 
 
   <header class="">
 
-    <button id="menu-button" class="hamburger hidden" type="button">
-        <div></div>
-        <div></div>
-        <div></div>
+    <button id="menu-button" class="hamburger mobile-only" type="button">
+        <div></div><div></div><div></div>
     </button>
 
-    <div class="d-flex justify-content-between">
-      <a href="#"><img src="" alt="Logo"></a>
-      <nav>      
-        <ul id="menu-options" class="navbar-nav d-flex flex-row gap-2">
-          <li class="nav-item"><a href="./about.html">About</a></li>
-          <li class="nav-item">Proogram</li>
-          <li class="nav-item">Join</li>
-          <li class="nav-item">Sponsor</li>
-          <li class="nav-item">News</li>
-          <li class="nav-item">CC Campaigns</li>
-        </ul>
-      </nav>
+    <div id="menu" class="container-fluid desktop-only">
+      <div class="d-flex justify-content-between">
+        <a class="p-3" href="#"><img id="logo-menu" src="logos/logo_h.png" alt="Logo"></a>
+        <nav class="d-flex">      
+          <ul id="menu-options" class="navbar-nav d-flex flex-row align-items-center gap-4 px-4">
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item">Program</li>
+            <li class="nav-item">Join</li>
+            <li class="nav-item">Sponsor</li>
+            <li class="nav-item">News</li>
+            <li class="nav-item">STF Campaigns</li>
+          </ul>
+        </nav>
+      </div>
+      
     </div>
   </header>
 
@@ -50,14 +56,14 @@
     <div class="container-md px-4 py-5">
       <div class="col-12 col-md-6">
         <h2 class="h1 color-reddish">"Discover a new world!"</h2>
-        <h1 class="cocogoose rem-3">SCI-TECH FEST 2022</h1>
+        <h1 class="cocogoose rem-3 color-red">SCI-TECH FEST 2022</h1>
       </div>
       <div class="col-md-8 my-2">
         <p class="main-p">This Novermber submerse into the amazing world of science and technology, with speakers from many echnological and scientifical fields! Discover the technology and science that are going to be part of our daily lives soon.</p>
       </div>
       <div class="text-center-mobile">
         <h2 class="cocogoose">2015.10.15(THU) ~ 16(FRI)</h2>
-        <p>@ National Museum of Korea, Art Center and more</p>
+        <p>@ National Museum of Venezuela, National Institute of Science and Technology, and more</p>
       </div>
     </div>
   </section>
@@ -93,7 +99,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
       </div>
     </div>
-    <a href="" class="desktop-only">See the whole program</a>
+    <a href="#" class="desktop-only underline">SEE THE WHOLE PROGRAM</a>
     <button class="mobile-only mt-5">Join the Sci-Tech Fest 2022</button>
     </div>
   </section>
@@ -162,13 +168,28 @@
         <button class="more-btn">MORE <img src="icons/arrow_down.png" alt="icon"></button>
         <button class="more-btn hidden">LESS <img src="icons/arrow_up.png" alt="icon"></button>
       </div>
-      
     </div>
   </section>
 
   <footer>
-    <div></div>
-    <div></div>
+    <div id="partner" class="container-fluid d-flex flex-column align-items-center py-5">
+      <h2>Partner</h2>
+      <div class="divider"></div>
+      <div class="d-flex row justify-content-center gap-5 pt-5">
+        <img class="partner-logo" src="logos/MIT_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/cern-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/spacex-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/NASA_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/ictp-logo.png" alt="logo">
+      </div>
+    </div>
+    <div id="credit" class="container-fluid d-flex align-items-center gap-5 px-4">
+      <img src="logos/logo.png" alt="logo">
+      <div>
+        <p>2022 International Institute of Science and Technology. Some Rights Reserved.</p>
+        <p>Error voluptatem eveniet molestias tempora, fugiat cupiditate ducimus nemo laboriosam neque quod vitae consequuntur id, reprehenderit porro culpa eum! Esse, velit corrupti!</p>
+      </div>
+    </div>
   </footer>
 </body>
 <script src="/main.js"></script>
