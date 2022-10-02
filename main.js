@@ -41,12 +41,12 @@ const moreBtn = document.querySelectorAll('.more-btn');
 
 function loadSpeakers() {
   let Speakers = '';
-  let n=0;
+  let n = 0;
   //  eslint-disable-next-line
   for(const spkr in speakers) {
     n += 1;
     const speaker = speakers[spkr];
-    if(n<=2){
+    if (n <= 2) {
       Speakers += `
       <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-4 borderless">
         <img class="fit-content-y" src="${speaker.picture}" alt="image">
@@ -69,7 +69,6 @@ function loadSpeakers() {
         </div>
       </div>`;
     }
-    
   }
   document.getElementById('speakers').innerHTML = Speakers;
 }
@@ -81,16 +80,15 @@ function displayMenu() {
 }
 
 function displaySpeakers() {
-  console.log('readed');
-  moreBtn.forEach(mbtn =>{
+  moreBtn.forEach((mbtn) => {
     mbtn.classList.toggle('hidden');
   });
-  document.querySelectorAll('.displayable').forEach(dsp =>{
+  document.querySelectorAll('.displayable').forEach((dsp) => {
     dsp.classList.toggle('desktop-only');
   });
 }
 
-moreBtn.forEach(mbtn =>{
+moreBtn.forEach((mbtn) => {
   mbtn.addEventListener('click', displaySpeakers);
 });
 document.querySelector('#phone-menu > div > button').addEventListener('click', displayMenu);
