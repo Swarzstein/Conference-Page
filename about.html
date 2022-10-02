@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="phone-menu" class="phone-menu hidden">
+    <div class="d-flex justify-content-end">
+      <button type="button" class="img-btn">
+        <img src="icons/Icon-Cancel.png" alt="Cancel">
+      </button>
+    </div>
+    <div class="container d-flex flex-column">
+      <a class="py-2 px-4" onclick="displayMenu()" href="/index.html"><h2>Home</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>About</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>program</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Join</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Sponsor</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>News</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>CTF Campaigns</h2></a>
+    </div>
+  </div>
+
+  <header>
+
+    <button id="menu-button" class="hamburger mobile-only absolute" type="button">
+        <div></div><div></div><div></div>
+    </button>
+    <div class="desktop-only bg-dark text-white fw-light">
+      <nav class="d-flex justify-content-end px-4 fs-small">      
+        <ul id="black-nav" class="navbar-nav d-flex flex-row align-items-center gap-2 px-4">
+          <li class="nav-item"><img class="" src="icons/facebook.png" alt="facebook"></li>
+          <li class="nav-item"><img src="icons/twitter.png" alt="twitter"></li>
+          <li class="nav-item">English</li>
+          <li class="nav-item">My Page</li>
+          <li class="nav-item ">logout</li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu" class="container-fluid desktop-only">
+      <div class="d-flex justify-content-between">
+        <a class="p-1" href="/index.html"><img id="logo-menu" src="logos/logo_h.png" alt="Logo"></a>
+        <nav class="d-flex">      
+          <ul id="menu-options" class="navbar-nav d-flex flex-row align-items-center gap-4 px-4">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item">Program</li>
+            <li class="nav-item">Join</li>
+            <li class="nav-item">Sponsor</li>
+            <li class="nav-item">News</li>
+            <li class="nav-item different">STF Campaigns</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="about-main">
+    <div class="container d-flex flex-column align-items-center text-center py-5">
+      <div class="col-12 col-md-6 text-center">
+        <h2 class="h1 color-reddish mobile-only">"Discover a new world!"</h2>
+        <h1 class="cocogoose rem-3 color-red">SCI-TECH FEST 2022</h1>
+      </div>
+      <div class="col-md-8 my-2">
+        <p class="about-p">This Novermber submerse into the amazing world of science and technology, with speakers from many technological and scientifical fields! Discover the technology and science that are going to be part of our daily lives soon.</p>
+      </div>
+      <div class="container">
+        <p>Please contact us per Email for any further question about Sci-Tech Fest 2022!</p>
+        <a class="underline fw-bold" href="#">scitechfest@iist.org</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-fluid d-flex flex-column align-items-center text-center py-5 sec-separator">
+    <h3>SciTech Fest 2022 Logo</h3>
+    <div class="divider"></div>
+    <div class="col-12 col-md-6 my-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias dicta ab doloribus voluptatem nam ea ut, esse facilis quisquam libero temporibus natus magnam reprehenderit vero tempore officiis deserunt exercitationem.</p>
+    </div>
+    <div class="sqare">
+      <img class="my-5" src="logos/logo.png" alt="Logo 2022">
+    </div>
+  </section>
+  <section id="previous-events" class="d-flex flex-column align-items-center text-center py-5">
+    <h3>See the previous SciTech Festivals</h3>
+    <div class="divider mb-3"></div>
+    <p>Take a look at the topics and expositions from previous festivals</p>
+    <div class="container row justify-content-center py-5 gap-2">
+        <div id="stf2021" class="prev-img col-11 col-md-5 text-center d-flex flex-column justify-content-center align-items-center gap-2 red-cover">
+            <h2 class="fw-bold display-4">2021</h2>
+            <h4>Sci-Tech Fest 2021 Mexico</h4>
+        </div>
+        <div id="stf2020" class="prev-img col-11 col-md-5 text-center d-flex flex-column justify-content-center align-items-center gap-2 red-cover">
+          <h2 class="fw-bold display-4">2020</h2>
+          <h4>Sci-Tech Fest 2020 Spain</h4>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div id="partner" class="container-fluid d-flex flex-column align-items-center py-5 mobile-only">
+      <h2>Partner</h2>
+      <div class="divider"></div>
+      <div class="d-flex row justify-content-center gap-2 pt-4">
+        <img class="partner-logo" src="logos/MIT_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/cern-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/spacex-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/NASA_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/ictp-logo.png" alt="logo">
+      </div>
+    </div>
+    <div id="credit" class="container-fluid d-flex align-items-center gap-5 px-4 py-3 dark-desktop">
+      <div class="col-2 col-md-1">
+        <img class="fit-container" src="logos/logo.png" alt="logo">
+      </div>
+      <div class="px-3">
+        <p>2022 International Institute of Science and Technology. Some Rights Reserved.</p>
+        <p class="desktop-only">Error voluptatem eveniet molestias tempora, fugiat cupiditate ducimus nemo laboriosam neque quod vitae consequuntur id, reprehenderit porro culpa eum! Esse, velit corrupti!</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="/main.js"></script>
+</html>

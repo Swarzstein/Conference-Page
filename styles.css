@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  color: #ec5242;
+  font-style: italic;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.cocogoose {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+.rem-3 {
+  font-size: 4rem;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger div {
+  background-color: #272a31;
+  height: 9%;
+  border-radius: 5em;
+  width: 80%;
+  margin: 2px auto;
+}
+
+.prev-img {
+  color: #fff;
+  height: 40vh;
+}
+
+.sqare {
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+.divider {
+  border-top: solid 2px #ec5242;
+  margin: 5px 0;
+  width: 40px;
+}
+
+.divider-2 {
+  border-top: solid 1px #d3d3d3;
+  margin: 5px 0;
+  width: 20px;
+}
+
+.different {
+  border: #ec5242 solid 3px;
+  color: #ec5242;
+}
+
+.fit-container {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.borderless {
+  border: none;
+}
+
+.partner-logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav li {
+  padding: 3px 8px;
+}
+
+.navbar-nav li:hover {
+  color: #ec5242;
+}
+
+.main-p {
+  margin: 17px 0.75em 0;
+  width: calc(100% - 2.5em);
+  padding: 1em 0.5em;
+  line-height: 150%;
+  font-size: 13px;
+  height: auto;
+  text-align: justify;
+  word-break: break-all;
+  border: 4px solid #fff;
+  background-color: #f7f7f8;
+}
+
+.about-p {
+  margin: 0 auto 33px auto;
+  padding: 2% 4%;
+  line-height: 25px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  font-size: 0.875em;
+}
+
+.program-card {
+  background: #ffffff1a;
+  padding: 2%;
+}
+
+.program-card:hover {
+  border: #d3d3d3 solid 2px;
+}
+
+.program-card h2 {
+  color: #ef513c;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 0%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.blackish {
+  color: #565656;
+}
+
+.more-btn {
+  border-radius: 0.5em;
+  border: 2px  #d3d3d3 solid;
+  background-color: #fff;
+  padding: 2%;
+}
+
+.img-btn {
+  background: none;
+  border-style: none;
+  padding: 1%;
+}
+
+.img-btn img {
+  height: 30px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-reddish {
+  color: #ef513c;
+}
+
+.color-red {
+  color: #c52611;
+}
+
+.fit-content-y {
+  height: fit-content;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.sec-separator {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.red-cover {
+  box-shadow: inset 0 0 0 200px #ef513cab;
+}
+
+.phone-menu {
+  width: -webkit-fill-available;
+  height: 100vh;
+  position: fixed;
+  background-color: #ef513c;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  z-index: 4;
+
+  /* Font */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  color: #fff;
+  padding: 0 3%;
+}
+
+.phone-menu div a {
+  border-bottom: solid 1px #d3d3d3;
+}
+
+#landing {
+  background-image: url(/images/main_big.png);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+#logo-menu {
+  height: 45px;
+}
+
+#about-main {
+  background: #f7f7f8 url(/images/about_bg_01.png) center no-repeat;
+  text-align: center;
+}
+
+#main-program {
+  background-image: url(/images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
+  text-align: center;
+  color: #fff;
+}
+
+#main-program button {
+  background-color: #ef513c;
+  border: none;
+  color: #fff;
+  width: 85%;
+  height: 12vh;
+}
+
+#partner {
+  background: #2e2e2e;
+  color: #aeaeae;
+}
+
+#stf2021 {
+  background: #f7f7f8 url(/images/Hugh-Herr.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#stf2020 {
+  background: #f7f7f8 url(/images/planetarium.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#black-nav {
+  font-size: small;
+}
+
+#black-nav li img {
+  width: 80%;
+}
+
+.bg-grayish {
+  background-color: #d3d3d3;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .dt-column {
+    flex-direction: column;
+  }
+
+  .main-p {
+    margin: 17px 0.75em 0;
+    width: calc(100% - 2.5em);
+    padding: 1em 0.5em;
+    line-height: 150%;
+    font-size: 13px;
+    height: auto;
+    text-align: justify;
+  }
+
+  #landing {
+    background-image: url(/images/main_big.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: auto;
+    height: auto;
+  }
+
+  #about-main {
+    background: #f7f7f8 url(/images/about_bg_01.png) center no-repeat;
+    text-align: center;
+    background-position: center top;
+    background-size: auto;
+    height: auto;
+  }
+
+  .dark-desktop {
+    background: #2e2e2e !important;
+    color: #aeaeae;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+
+  .program-card h2 {
+    font-size: 14px;
+  }
+
+  .program-card p {
+    text-align: left;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}

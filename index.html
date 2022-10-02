@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadSpeakers()">
+
+  <div id="phone-menu" class="phone-menu hidden">
+    <div class="d-flex justify-content-end">
+      <button type="button" class="img-btn">
+        <img src="icons/Icon-Cancel.png" alt="Cancel">
+      </button>
+    </div>
+    <div class="container d-flex flex-column">
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Home</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="/about.html"><h2>About</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>program</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Join</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>Sponsor</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>News</h2></a>
+      <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>CTF Campaigns</h2></a>
+    </div>
+  </div>
+  
+  <button id="menu-button" class="hamburger mobile-only absolute" type="button">
+      <div></div><div></div><div></div>
+  </button>
+
+  <header class="">
+
+    <div class="desktop-only bg-dark text-white fw-light">
+      <nav class="d-flex justify-content-end px-4 fs-small">      
+        <ul id="black-nav" class="navbar-nav d-flex flex-row align-items-center gap-2 px-4">
+          <li class="nav-item"><img class="" src="icons/facebook.png" alt="facebook"></li>
+          <li class="nav-item"><img src="icons/twitter.png" alt="twitter"></li>
+          <li class="nav-item">English</li>
+          <li class="nav-item">My Page</li>
+          <li class="nav-item ">logout</li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu" class="container-fluid desktop-only">
+      <div class="d-flex justify-content-between">
+        <a class="p-1" href="#"><img id="logo-menu" src="logos/logo_h.png" alt="Logo"></a>
+        <nav class="d-flex">      
+          <ul id="menu-options" class="navbar-nav d-flex flex-row align-items-center gap-2 px-4">
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item">Program</li>
+            <li class="nav-item">Join</li>
+            <li class="nav-item">Sponsor</li>
+            <li class="nav-item">News</li>
+            <li class="nav-item different">STF Campaigns</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="landing" class="py-5">
+    <div class="container-md px-4 py-5">
+      <div class="col-12 col-md-6">
+        <h2 class="h1 color-reddish">"Discover a new world!"</h2>
+        <h1 class="cocogoose rem-3 color-red">SCI-TECH FEST 2022</h1>
+      </div>
+      <div class="col-md-8 my-2">
+        <p class="main-p">This Novermber submerse into the amazing world of science and technology, with speakers from many echnological and scientifical fields! Discover the technology and science that are going to be part of our daily lives soon.</p>
+      </div>
+      <div>
+        <h2 class="cocogoose blackish">2015.10.15(THU) ~ 16(FRI)</h2>
+        <p>@ National Museum of Venezuela, National Institute of Science and Technology, and more</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="main-program" class="py-5">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="color-white">Main Program</h2>
+    <div class="divider"></div>
+    <div class="container-fluid d-flex flex-wrap justify-content-center gap-2 mt-5 mb-3">
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_01.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Lecture</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_02.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Excibitions</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_03.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Forum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_04.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Workshop</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+      <div class="program-card d-flex flex-md-column align-items-center col-12 col-md-2 gap-1">
+        <div class="col-2 col-md-12"><img src="icons/program_icon_05.png" alt="img"></div>
+        <h2 class="col-3 col-md-12">Experiment</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, laudantium minima maxime.</p>
+      </div>
+    </div>
+    <a href="#" class="desktop-only underline">SEE THE WHOLE PROGRAM</a>
+    <button class="mobile-only mt-5">Join the Sci-Tech Fest 2022</button>
+    </div>
+  </section>
+
+  <section id="featured-speakers" class="py-5">
+    <div class="container-md d-flex flex-column align-items-center">
+      <h2>Featured Speakers</h2>
+      <div class="divider mb-5"></div>
+      <div id="speakers" class="row">
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_01.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_02.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_03.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_04.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_05.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+        <div class="card col-md-6 d-flex flex-row align-items-center gap-4 px-4 py-2 borderless">
+          <img class="fit-content-y" src="images/speaker_06.png" alt="image">
+          <div class="card-content">
+            <h3>Name Last Name</h3>
+            <span class="color-warn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <div class="divider-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere dolorem nemo porro earum iusto aut tenetur beatae a et enim voluptates sequi ea.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-only container-fluid row">
+        <button class="more-btn">MORE <img src="icons/arrow_down.png" alt="icon"></button>
+        <button class="more-btn hidden" >LESS <img src="icons/arrow_up.png" alt="icon"></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="partner" class="container-fluid d-flex flex-column align-items-center py-5">
+      <h2>Partner</h2>
+      <div class="divider"></div>
+      <div class="d-flex row justify-content-center gap-2 pt-4">
+        <img class="partner-logo" src="logos/MIT_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/cern-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/spacex-logo.png" alt="logo">
+        <img class="partner-logo" src="logos/NASA_logo.png" alt="logo">
+        <img class="partner-logo" src="logos/ictp-logo.png" alt="logo">
+      </div>
+    </div>
+    <div id="credit" class="container-fluid d-flex align-items-center gap-5 px-4 py-3 bg-grayish">
+      <div class="col-2 col-md-1">
+        <img class="fit-container" src="logos/logo.png" alt="logo">
+      </div>
+      <div class="p-3">
+        <p class="mb-1">2022 International Institute of Science and Technology. Some Rights Reserved.</p>
+        <p class="desktop-only mb-1">Error voluptatem eveniet molestias tempora, fugiat cupiditate ducimus nemo laboriosam neque quod vitae consequuntur id, reprehenderit porro culpa eum! Esse, velit corrupti!</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="/main.js"></script>
+</html>
