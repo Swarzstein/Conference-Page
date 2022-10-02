@@ -7,6 +7,7 @@
 - HTML5
 - CSS3
 - JavasScript
+- Bootstrap 5
 
 ## Live Demo (if available)
 
