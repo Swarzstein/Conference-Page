@@ -20,6 +20,10 @@ span {
   font-style: italic;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .cocogoose {
   font-family: 'COCOGOOSE', sans-serif;
 }
@@ -49,25 +53,34 @@ span {
 
 .prev-img {
   color: #fff;
-  width: 90%;
   height: 40vh;
 }
 
+.sqare {
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
 .divider {
-  border: solid 1px #ec5242;
+  border-top: solid 2px #ec5242;
   margin: 5px 0;
   width: 40px;
 }
 
 .divider-2 {
-  border: solid 1px #d3d3d3;
+  border-top: solid 1px #d3d3d3;
   margin: 5px 0;
   width: 20px;
 }
 
+.different {
+  border: #ec5242 solid 3px;
+  color: #ec5242;
+}
+
 .fit-container {
-  height: 100%;
-  width: 100%;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .borderless {
@@ -79,8 +92,16 @@ span {
   width: auto;
 }
 
+.navbar-nav li {
+  padding: 3px 8px;
+}
+
+.navbar-nav li:hover {
+  color: #ec5242;
+}
+
 .main-p {
-  margin: 17px 0.75em 0px;
+  margin: 17px 0.75em 0;
   width: calc(100% - 2.5em);
   padding: 1em 0.5em;
   line-height: 150%;
@@ -102,9 +123,12 @@ span {
 }
 
 .program-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff1a;
   padding: 2%;
-  
+}
+
+.program-card:hover {
+  border: #d3d3d3 solid 2px;
 }
 
 .program-card h2 {
@@ -112,6 +136,14 @@ span {
   font-size: 1.5em;
   font-weight: bold;
   border-radius: 0%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.blackish {
+  color: #565656;
 }
 
 .more-btn {
@@ -189,7 +221,7 @@ span {
 }
 
 #logo-menu {
-  height: 50px;
+  height: 45px;
 }
 
 #about-main {
@@ -215,7 +247,7 @@ span {
 
 #partner {
   background: #2e2e2e;
-  color:#aeaeae;
+  color: #aeaeae;
 }
 
 #stf2021 {
@@ -228,8 +260,20 @@ span {
   background-size: cover;
 }
 
+#black-nav {
+  font-size: small;
+}
+
+#black-nav li img {
+  width: 80%;
+}
+
+.bg-grayish {
+  background-color: #d3d3d3;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -263,8 +307,13 @@ span {
     height: auto;
   }
 
+  .dark-desktop {
+    background: #2e2e2e !important;
+    color: #aeaeae;
+  }
+
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -276,10 +325,12 @@ span {
   .program-card h2 {
     font-size: 14px;
   }
+
   .program-card p {
     text-align: left;
   }
+
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 }
