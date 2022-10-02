@@ -13,6 +13,10 @@
 
 Not available
 
+## Prerequisites
+
+- Needs Bootstrap 5 installed in the folder in order to display it correctly.
+
 ### Deployment
 
 https://swarzstein.github.io/Conference-Page/
