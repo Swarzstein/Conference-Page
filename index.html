@@ -26,32 +26,42 @@
       <a class="py-2 px-4" onclick="displayMenu()" href="#"><h2>CTF Campaigns</h2></a>
     </div>
   </div>
+  
+  <button id="menu-button" class="hamburger mobile-only absolute" type="button">
+      <div></div><div></div><div></div>
+  </button>
 
   <header class="">
 
-    <button id="menu-button" class="hamburger mobile-only" type="button">
-        <div></div><div></div><div></div>
-    </button>
-
+    <div class="desktop-only bg-dark text-white fw-light">
+      <nav class="d-flex justify-content-end px-4 fs-small">      
+        <ul id="black-nav" class="navbar-nav d-flex flex-row align-items-center gap-2 px-4">
+          <li class="nav-item"><img class="" src="icons/facebook.png" alt="facebook"></li>
+          <li class="nav-item"><img src="icons/twitter.png" alt="twitter"></li>
+          <li class="nav-item">English</li>
+          <li class="nav-item">My Page</li>
+          <li class="nav-item ">logout</li>
+        </ul>
+      </nav>
+    </div>
     <div id="menu" class="container-fluid desktop-only">
       <div class="d-flex justify-content-between">
-        <a class="p-3" href="#"><img id="logo-menu" src="logos/logo_h.png" alt="Logo"></a>
+        <a class="p-1" href="#"><img id="logo-menu" src="logos/logo_h.png" alt="Logo"></a>
         <nav class="d-flex">      
-          <ul id="menu-options" class="navbar-nav d-flex flex-row align-items-center gap-4 px-4">
+          <ul id="menu-options" class="navbar-nav d-flex flex-row align-items-center gap-2 px-4">
             <li class="nav-item"><a href="./about.html">About</a></li>
             <li class="nav-item">Program</li>
             <li class="nav-item">Join</li>
             <li class="nav-item">Sponsor</li>
             <li class="nav-item">News</li>
-            <li class="nav-item">STF Campaigns</li>
+            <li class="nav-item different">STF Campaigns</li>
           </ul>
         </nav>
       </div>
-      
     </div>
   </header>
 
-  <section id="landing">
+  <section id="landing" class="py-5">
     <div class="container-md px-4 py-5">
       <div class="col-12 col-md-6">
         <h2 class="h1 color-reddish">"Discover a new world!"</h2>
@@ -60,8 +70,8 @@
       <div class="col-md-8 my-2">
         <p class="main-p">This Novermber submerse into the amazing world of science and technology, with speakers from many echnological and scientifical fields! Discover the technology and science that are going to be part of our daily lives soon.</p>
       </div>
-      <div class="text-center-mobile">
-        <h2 class="cocogoose">2015.10.15(THU) ~ 16(FRI)</h2>
+      <div>
+        <h2 class="cocogoose blackish">2015.10.15(THU) ~ 16(FRI)</h2>
         <p>@ National Museum of Venezuela, National Institute of Science and Technology, and more</p>
       </div>
     </div>
@@ -165,7 +175,7 @@
       </div>
       <div class="mobile-only container-fluid row">
         <button class="more-btn">MORE <img src="icons/arrow_down.png" alt="icon"></button>
-        <button class="more-btn hidden">LESS <img src="icons/arrow_up.png" alt="icon"></button>
+        <button class="more-btn hidden" >LESS <img src="icons/arrow_up.png" alt="icon"></button>
       </div>
     </div>
   </section>
@@ -174,7 +184,7 @@
     <div id="partner" class="container-fluid d-flex flex-column align-items-center py-5">
       <h2>Partner</h2>
       <div class="divider"></div>
-      <div class="d-flex row justify-content-center gap-5 pt-5">
+      <div class="d-flex row justify-content-center gap-2 pt-4">
         <img class="partner-logo" src="logos/MIT_logo.png" alt="logo">
         <img class="partner-logo" src="logos/cern-logo.png" alt="logo">
         <img class="partner-logo" src="logos/spacex-logo.png" alt="logo">
@@ -182,11 +192,13 @@
         <img class="partner-logo" src="logos/ictp-logo.png" alt="logo">
       </div>
     </div>
-    <div id="credit" class="container-fluid d-flex align-items-center gap-5 px-4">
-      <img src="logos/logo.png" alt="logo">
-      <div>
-        <p>2022 International Institute of Science and Technology. Some Rights Reserved.</p>
-        <p>Error voluptatem eveniet molestias tempora, fugiat cupiditate ducimus nemo laboriosam neque quod vitae consequuntur id, reprehenderit porro culpa eum! Esse, velit corrupti!</p>
+    <div id="credit" class="container-fluid d-flex align-items-center gap-5 px-4 py-3 bg-grayish">
+      <div class="col-2 col-md-1">
+        <img class="fit-container" src="logos/logo.png" alt="logo">
+      </div>
+      <div class="p-3">
+        <p class="mb-1">2022 International Institute of Science and Technology. Some Rights Reserved.</p>
+        <p class="desktop-only mb-1">Error voluptatem eveniet molestias tempora, fugiat cupiditate ducimus nemo laboriosam neque quod vitae consequuntur id, reprehenderit porro culpa eum! Esse, velit corrupti!</p>
       </div>
     </div>
   </footer>
