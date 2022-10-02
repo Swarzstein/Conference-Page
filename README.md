@@ -41,7 +41,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Original design idea by Cindy Shin in Behance.
+- Original design idea by [Cindy Shin in Behance](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## 📝 License
 
