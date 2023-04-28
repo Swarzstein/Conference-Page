@@ -215,7 +215,7 @@ span {
 }
 
 #landing {
-  background-image: url(/images/main_big.png);
+  background-image: url(images/main_big.png);
   background-repeat: repeat-x;
   background-position: center;
 }
@@ -225,12 +225,12 @@ span {
 }
 
 #about-main {
-  background: #f7f7f8 url(/images/about_bg_01.png) center no-repeat;
+  background: #f7f7f8 url(images/about_bg_01.png) center no-repeat;
   text-align: center;
 }
 
 #main-program {
-  background-image: url(/images/pattern_bg.png);
+  background-image: url(images/pattern_bg.png);
   background-repeat: repeat;
   background-color: #272a32;
   text-align: center;
@@ -251,12 +251,12 @@ span {
 }
 
 #stf2021 {
-  background: #f7f7f8 url(/images/Hugh-Herr.jpg) no-repeat center;
+  background: #f7f7f8 url(images/Hugh-Herr.jpg) no-repeat center;
   background-size: cover;
 }
 
 #stf2020 {
-  background: #f7f7f8 url(/images/planetarium.jpg) no-repeat center;
+  background: #f7f7f8 url(images/planetarium.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -292,7 +292,7 @@ span {
   }
 
   #landing {
-    background-image: url(/images/main_big.png);
+    background-image: url(images/main_big.png);
     background-repeat: repeat-x;
     background-position: center center;
     background-size: auto;
@@ -300,7 +300,7 @@ span {
   }
 
   #about-main {
-    background: #f7f7f8 url(/images/about_bg_01.png) center no-repeat;
+    background: #f7f7f8 url(images/about_bg_01.png) center no-repeat;
     text-align: center;
     background-position: center top;
     background-size: auto;
