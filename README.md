@@ -1,6 +1,6 @@
 # Conference-Page
 
-> First Capstone Project From Microverse
+> Symple frontend Template for a Tech conference page presenting the main page and the About Page. based on Cindy Shin's Design in Behance
 
 ## Built With
 
